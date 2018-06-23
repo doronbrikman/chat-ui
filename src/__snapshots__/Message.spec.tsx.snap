@@ -21,11 +21,12 @@ exports[`renders correctly 1`] = `
       <Image
         as="img"
         size="mini"
+        spaced="right"
         src="image-link"
         ui={true}
       >
         <img
-          className="ui mini image"
+          className="ui mini right spaced image"
           src="image-link"
         />
       </Image>

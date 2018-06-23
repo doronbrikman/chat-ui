@@ -13,7 +13,7 @@ export const ChatMessage: React.StatelessComponent<Props> = ({
   message: { username, avatar, text }
 }) => (
   <Message icon color={isMe ? 'green' : 'blue'}>
-    <Image src={avatar} size="mini" />
+    <Image src={avatar} size="mini" spaced="right" />
     <Message.Content>
       <Message.Header>{username}</Message.Header>
       {text}

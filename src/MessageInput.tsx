@@ -21,6 +21,20 @@ export class MessageInput extends React.Component<Props, State> {
     disableSend: true
   };
 
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown);
+  }
+
+  handleKeyDown = ({ keyCode }: KeyboardEvent) => {
+    if (keyCode === 13) {
+      this.handleSubmit();
+    }
+  };
+
   handleSubmit = () => {
     const message: Message = {
       username: this.props.user.username,
