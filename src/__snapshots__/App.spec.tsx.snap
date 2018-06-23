@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<App
+  messagesService={
+    MessagesService {
+      "socket": Object {
+        "close": [Function],
+        "emit": [Function],
+        "on": [Function],
+        "open": [Function],
+      },
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100vh",
+        "margin": "0 auto",
+        "maxWidth": 500,
+        "padding": 4,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flex": 1,
+          "padding": 4,
+        }
+      }
+    >
+      <MessageStream
+        service={
+          MessagesService {
+            "socket": Object {
+              "close": [Function],
+              "emit": [Function],
+              "on": [Function],
+              "open": [Function],
+            },
+          }
+        }
+      >
+        <MessagesList
+          messages={Array []}
+          user={
+            UserStore {
+              "avatar": "d",
+              "username": "d",
+            }
+          }
+        >
+          <ul
+            onScroll={[Function]}
+            style={
+              Object {
+                "height": "100%",
+                "margin": 0,
+                "overflow": "auto",
+                "padding": 0,
+                "width": "100%",
+              }
+            }
+          />
+        </MessagesList>
+      </MessageStream>
+    </div>
+    <div>
+      <MessageInput
+        onSubmit={[Function]}
+        onUsernameChange={[Function]}
+        user={
+          UserStore {
+            "avatar": "d",
+            "username": "d",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "height": 30,
+              "justifyContent": "space-around",
+            }
+          }
+        >
+          <Image
+            as="img"
+            size="mini"
+            src="d"
+            ui={true}
+          >
+            <img
+              className="ui mini image"
+              src="d"
+            />
+          </Image>
+          <Input
+            onChange={[Function]}
+            placeholder="username"
+            type="text"
+            value="d"
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                onChange={[Function]}
+                placeholder="username"
+                type="text"
+                value="d"
+              />
+            </div>
+          </Input>
+          <Input
+            onChange={[Function]}
+            placeholder="Type Somthing..."
+            type="text"
+            value=""
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                onChange={[Function]}
+                placeholder="Type Somthing..."
+                type="text"
+                value=""
+              />
+            </div>
+          </Input>
+          <Button
+            as="button"
+            disabled={true}
+            onClick={[Function]}
+            role="button"
+          >
+            <button
+              className="ui disabled button"
+              disabled={true}
+              onClick={[Function]}
+              role="button"
+              tabIndex={-1}
+            >
+              Send
+            </button>
+          </Button>
+        </div>
+      </MessageInput>
+    </div>
+  </div>
+</App>
+`;

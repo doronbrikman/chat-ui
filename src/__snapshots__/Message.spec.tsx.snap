@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Component
+  isMe={true}
+  message={
+    Object {
+      "avatar": "image-link",
+      "text": "Hello",
+      "username": "test",
+    }
+  }
+>
+  <Message
+    color="green"
+    icon={true}
+  >
+    <div
+      className="ui green icon message"
+    >
+      <Image
+        as="img"
+        size="mini"
+        src="image-link"
+        ui={true}
+      >
+        <img
+          className="ui mini image"
+          src="image-link"
+        />
+      </Image>
+      <MessageContent>
+        <div
+          className="content"
+        >
+          <MessageHeader>
+            <div
+              className="header"
+            >
+              test
+            </div>
+          </MessageHeader>
+          Hello
+        </div>
+      </MessageContent>
+    </div>
+  </Message>
+</Component>
+`;
